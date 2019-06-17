@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('fotos/main.jpg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: stretch;
+    font: normal 16px quicksand;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@keyframes fadein{
+    100%{
+        opacity: 1;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: 1s fadein 0.5s forwards;
+    opacity: 0;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 10px;
+}
+
+.home {
+     font-size: 30px;
+     font-weight: bold;
+     margin: 20px 20px;
+     letter-spacing: 2px;
+     text-shadow: 1px 2px 5px black;
+}
+
+#menu {
+    font-size: 16px;
+    margin: 20px 20px;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 5px black;
+}
+
+.caption {
+    position: relative;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 4;
+    animation: 1.5s appear forwards;
+    opacity: 0;
+    top: 50px;
+}
+
+@keyframes appear {
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.caption h1 {
+    font: normal 60px quicksand;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 20px 20px;
+    text-shadow: 1px 2px 5px black;
+}
+
+.caption p {
+    margin: 20px 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-shadow: 1px 2px 5px black;
+}
+
+.btn {
+    color: whitesmoke;
+    position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    box-shadow: 0 6px darkblue;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3f51b5;
+    opacity: 1;
+    font: normal 20px quicksand;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    box-shadow: 0 4px darkblue;
+    top: 2px
+}
+
+.btn:active {
+    box-shadow: 0 0px darkblue;
+    top: 6px;
+}
+
+#destinations {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-transform: capitalize;
+    font: normal 40px quicksand;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 40px 0 20px 0;
+    color: #555;
+}
+
+.description {
+    font: normal 20px quicksand;
+    font-weight: bold;
+    margin: 20px;
+    color: #555;
+    max-width: 775px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+img {
+    position: relative;
+    padding: 25px;
+    height: 350px;
+    width: 300px;
+    opacity: 0;
+    top: -50px;
+}
+
+.small {
+    flex: 1 1 275px;
+    animation: 1.5s appear forwards;
+}
+
+.large {
+    flex: 2 1 575px;
+    animation: 1s  appear forwards;
+}
+
+#tourpackages {
+    background-color: #fffcf0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+i {
+    color: rgb(198, 157, 236);
+}
+
+.packages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.package {
+    flex: 1 1 350px;
+    padding: 0 100px 100px 100px;
+}
+
+.package p{
+    font-size: 20px;
+}
+
+#testimonials{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote {
+    margin: 30px;
+    max-width: 600px;
+    text-align: center;
+    font: normal 20px quicksand;
+}
+
+.author {
+    text-align: center;
+    font: normal 15px quicksand;
+    margin-bottom: 10px;
+}
+
+#learnMore {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+input {
+    outline: none;
+    border-radius: 10px;
+    width: 60%;
+    height: 45px;
+    border: 2px solig #555;
+    margin: 20px;
+    font-size: 30px;
+}
+
+footer {
+    text-align: center;
+    background-color: teal;
+    color: white;
+    font: normal 20px quicksand;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px;
+}
